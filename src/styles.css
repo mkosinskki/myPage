@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-forestGreen: #1b4332;
+  --color-mediumGreen: #3a7d44;
+  --color-lightMint: #c1f2b0;
+  --color-offWhite: #fbfbfb;
+  --color-graphite: #414141;
+}
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+}
