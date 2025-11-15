@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="w-full px-5 xl:px-40 2xl:px-80 py-5 flex items-center justify-between sticky top-0 bg-offWhite shadow-md">
+        class="w-full px-5 xl:px-40 2xl:px-80 py-5 flex items-center justify-between sticky top-0 bg-offWhite shadow-md z-50">
         <div>
             <RouterLink to="/" class="text-2xl font-bold text-mediumGreen"> Marcin Kosiński </RouterLink>
         </div>
