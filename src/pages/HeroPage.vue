@@ -31,7 +31,7 @@
         </div>
 
         <div class=" w-full flex justify-center md:justify-end 3xl:justify-center!">
-            <img src="../components/papuzka.png" alt="logo" class="w-56 h-auto md:w-80">
+            <img src="../components/papuzka.png" alt="logo" class="w-56 h-auto md:w-80 hover:scale-110 duration-200">
         </div>
 
         <svg class="absolute bottom-0 left-0 w-full h-auto" width="1920" height="230" viewBox="0 0 1920 230" fill="none"
