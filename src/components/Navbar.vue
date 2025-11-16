@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="w-full px-5 xl:px-40 2xl:px-80 py-5 flex items-center justify-between sticky top-0 bg-offWhite shadow-md z-50">
+        class="w-full px-5 xl:px-40 2xl:px-80 3xl:px-[400px]! 4xl:px-[800px]! py-5 flex items-center justify-between sticky top-0 bg-offWhite shadow-md z-50">
         <div class="z-20">
             <RouterLink to="/" class="text-2xl font-bold text-mediumGreen"> Marcin Kosiński </RouterLink>
         </div>
@@ -47,22 +47,14 @@
 
 <script setup>
 import { ref } from 'vue';
-import { onClickOutside } from '@vueuse/core'
 import LeafPair from './LeafPair.vue';
 
 const isMenuOpen = ref(false);
-const mobileMenuRef = ref(null);
 const burgerButtonRef = ref(null);
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
-
-// onClickOutside(
-//     mobileMenuRef,
-//     () => { isMenuOpen.value = false; },
-//     { ignore: [burgerButtonRef] }
-// );
 
 const menuItems = [
     { name: 'O mnie', path: '/o-mnie' },
