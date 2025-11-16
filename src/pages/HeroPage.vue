@@ -1,8 +1,8 @@
 <template>
     <div
-        class="relative flex flex-col bg-forestGreen text-offWhite justify-start items-center min-h-screen md:min-h-[calc(100vh-72px)] px-5 pt-10 space-y-10 md:px-15 md:flex-row md:space-y-0 md:space-x-6 md:pt-0 pb-46">
+        class="relative flex flex-col bg-forestGreen text-offWhite justify-center md:justify-start items-center min-h-[calc(100vh-72px)] px-5 space-y-10 md:px-15 md:flex-row md:space-y-0 md:space-x-6 md:pb-46">
 
-        <div class=" w-full items-center justify-center space-y-6 py-5">
+        <div class=" w-full items-center justify-center space-y-8 py-5">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center md:text-left">
                 Cześć, jestem Marcin
             </h1>
@@ -11,8 +11,7 @@
                 Jestem studentem informatyki. Tworzę nowoczesne i responsywne aplikacje webowe.
             </p>
 
-            <div
-                class=" grid grid-cols-3 gap-5 md:gap-15 items-center px-5 py-3 md:px-0 text-graphite font-medium md:w-fit">
+            <div class=" grid grid-cols-3 gap-3 md:gap-15 items-center py-3 md:px-0 text-graphite font-medium md:w-fit">
 
                 <div
                     class="md:min-w-40 bg-lightMint px-3 py-2 rounded-lg text-center hover:bg-mediumGreen hover:text-offWhite hover:translate-y-0.5 hover:shadow-md duration-150">

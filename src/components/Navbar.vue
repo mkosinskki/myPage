@@ -1,7 +1,7 @@
 <template>
     <nav
         class="w-full px-5 xl:px-40 2xl:px-80 py-5 flex items-center justify-between sticky top-0 bg-offWhite shadow-md z-50">
-        <div>
+        <div class="z-20">
             <RouterLink to="/" class="text-2xl font-bold text-mediumGreen"> Marcin Kosiński </RouterLink>
         </div>
 
@@ -26,14 +26,20 @@
         </div>
 
         <Transition name="fade">
-            <div v-if="isMenuOpen" ref="mobileMenuRef"
-                class="absolute top-full left-0 w-full bg-lightMint shadow-md flex flex-col items-center gap-4 py-5 md:hidden">
+            <div v-if="isMenuOpen"
+                class="absolute top-full left-0 w-full bg-lightMint shadow-xl flex flex-col items-center gap-4 py-5 md:hidden z-20">
                 <RouterLink v-for="item in menuItems" :key="item.name" :to="item.path" @click="toggleMenu"
                     class="group relative text-graphite font-medium px-4 py-2 flex justify-center items-center text-xl">
                     <span class="relative z-10 px-2.5">{{ item.name }}</span>
                     <LeafPair side="right" />
                     <LeafPair side="left" />
                 </RouterLink>
+            </div>
+        </Transition>
+
+        <Transition name="fade">
+            <div v-if="isMenuOpen" @click="toggleMenu"
+                class="fixed inset-x-0 bottom-0 top-20 z-10 bg-black/20 backdrop-blur-sm md:hidden">
             </div>
         </Transition>
     </nav>
@@ -52,11 +58,11 @@ const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
 
-onClickOutside(
-    mobileMenuRef,
-    () => { isMenuOpen.value = false; },
-    { ignore: [burgerButtonRef] }
-);
+// onClickOutside(
+//     mobileMenuRef,
+//     () => { isMenuOpen.value = false; },
+//     { ignore: [burgerButtonRef] }
+// );
 
 const menuItems = [
     { name: 'O mnie', path: '/o-mnie' },
