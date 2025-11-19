@@ -2,7 +2,7 @@
     <div
         class="relative flex flex-col bg-forestGreen text-offWhite justify-center md:justify-start items-center min-h-[calc(100vh-72px)] px-5 space-y-10 md:px-15 md:flex-row md:space-y-0 md:space-x-6 md:pb-46">
 
-        <div class=" w-full items-center justify-center space-y-8 py-5">
+        <div class="flex flex-col w-full items-center justify-center space-y-8 py-5">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center md:text-left 3xl:text-center!">
                 Cześć, jestem Marcin
             </h1>
@@ -30,7 +30,7 @@
 
         </div>
 
-        <div class=" w-full flex justify-center md:justify-end 3xl:justify-center!">
+        <div class=" w-full flex justify-center">
             <img src="../components/papuzka.png" alt="logo" class="w-56 h-auto md:w-80 hover:scale-110 duration-200">
         </div>
 
