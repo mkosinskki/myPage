@@ -2,7 +2,7 @@
     <nav
         class="w-full px-5 xl:px-40 2xl:px-80 3xl:px-[400px]! 4xl:px-[800px]! py-5 flex items-center justify-between sticky top-0 bg-offWhite shadow-md z-50">
         <div class="z-20">
-            <RouterLink to="/" class="text-2xl font-bold text-mediumGreen"> Marcin Kosiński </RouterLink>
+            <a href="#hero" class="text-2xl font-bold text-mediumGreen"> Marcin Kosiński </a>
         </div>
 
         <button @click="toggleMenu" ref="burgerButtonRef" class="md:hidden text-graphite focus:outline-none z-50">
@@ -17,23 +17,27 @@
         </button>
 
         <div class="hidden md:flex items-center gap-5 lg:gap-8 2xl:gap-12">
-            <RouterLink v-for="item in menuItems" :key="item.name" :to="item.path"
+            <component v-for="item in menuItems" :key="item.name" :is="item.path.startsWith('#') ? 'a' : 'RouterLink'"
+                :href="item.path.startsWith('#') ? item.path : undefined"
+                :to="item.path.startsWith('#') ? undefined : item.path"
                 class="group relative text-graphite hover:text-mediumGreen hover:bg-lightMint hover:rounded-md font-medium px-1 py-1 flex justify-center items-center">
                 <span class="relative z-10 bg-offWhite px-2.5 rounded-sm">{{ item.name }}</span>
                 <LeafPair side="right" />
                 <LeafPair side="left" />
-            </RouterLink>
+            </component>
         </div>
 
         <Transition name="fade">
-            <div v-if="isMenuOpen"
-                class="absolute top-full left-0 w-full bg-lightMint shadow-xl flex flex-col items-center gap-4 py-5 md:hidden z-20">
-                <RouterLink v-for="item in menuItems" :key="item.name" :to="item.path" @click="toggleMenu"
+            <div v-if="isMenuOpen" class="...">
+                <component v-for="item in menuItems" :key="item.name"
+                    :is="item.path.startsWith('#') ? 'a' : 'RouterLink'"
+                    :href="item.path.startsWith('#') ? item.path : undefined"
+                    :to="item.path.startsWith('#') ? undefined : item.path" @click="toggleMenu"
                     class="group relative text-graphite font-medium px-4 py-2 flex justify-center items-center text-xl">
                     <span class="relative z-10 px-2.5">{{ item.name }}</span>
                     <LeafPair side="right" />
                     <LeafPair side="left" />
-                </RouterLink>
+                </component>
             </div>
         </Transition>
 
@@ -57,7 +61,7 @@ const toggleMenu = () => {
 };
 
 const menuItems = [
-    { name: 'O mnie', path: '/o-mnie' },
+    { name: 'O mnie', path: '#about-me' },
     { name: 'Projekty', path: '/projekty' },
     { name: 'Tech Stack', path: '/tech-stack' },
     { name: 'Edukacja', path: '/edukacja' },
