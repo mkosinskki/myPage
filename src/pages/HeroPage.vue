@@ -2,7 +2,7 @@
     <section id="hero" class="bg-forestGreen">
         <div class="relative flex flex-col min-h-screen">
             <div
-                class="container relative flex flex-col mx-auto px-5 space-y-10 mt-10 md:flex-row md:space-y-0 md:space-x-10 md:mt-28 md:px-16">
+                class="container relative flex flex-col mx-auto px-5 space-y-10 mt-10 md:flex-row md:space-y-0 md:space-x-40 md:mt-28 md:px-16 justify-center">
                 <div class="flex flex-col space-y-6 items-center pt-16 md:w-1/2 md:pt-20 md:items-start">
                     <h1 class="text-4xl lg:text-6xl font-extrabold text-center md:text-left text-cotton">
                         Cześć, jestem Marcin
@@ -14,24 +14,24 @@
 
                     <div class="flex w-full md:w-auto gap-4 md:gap-12 my-8">
 
-                        <a href="#"
-                            class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md whitespace-nowrap">
+                        <a href="#about-me"
+                            class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md">
                             O mnie
                         </a>
 
                         <a href="#"
-                            class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md whitespace-nowrap">
+                            class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md">
                             Projekty
                         </a>
 
                         <a href="#"
-                            class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md whitespace-nowrap">
+                            class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md">
                             Tech stack
                         </a>
                     </div>
                 </div>
 
-                <div class="flex justify-center items-center md:w-1/2 md:pt-14">
+                <div class="flex justify-center items-center md:pt-14">
                     <img src="../components/papuzka.png" alt="parrot" class="w-60 h-auto md:w-80">
                 </div>
             </div>
