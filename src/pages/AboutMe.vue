@@ -2,7 +2,7 @@
     <section id="about-me" class="bg-cotton relative">
 
         <div
-            class="container mx-auto flex flex-col-reverse md:flex-row bg-cotton text-offWhite justify-center items-center min-h-[calc(100vh-72px)] px-10 py-10 space-y-10 md:px-12 md:space-y-0 md:space-x-10">
+            class="container mx-auto flex flex-col-reverse md:flex-row text-offWhite justify-center items-center min-h-[calc(100vh-72px)] px-10 py-10 space-y-10 md:px-12 md:space-y-0 md:space-x-10">
             <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
                 <div class="group mt-20 md:mt-0">
                     <img src="https://placehold.co/700x900/" alt="zdjecie marcina"
