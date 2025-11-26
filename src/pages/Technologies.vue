@@ -8,7 +8,7 @@
                 fill="#FDFDF5" />
         </svg>
 
-        <div class="relative container max-w-7xl mx-auto flex flex-col py-30 space-y-20 md:space-y-20">
+        <div class="relative container max-w-6xl mx-auto flex flex-col pt-30 pb-48 space-y-20 md:space-y-20 z-20">
             <div class="flex flex-col space-y-6 text-center md:text-left px-5 md:px-0">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-center md:text-left text-cotton">Tech stack
                 </h2>
@@ -16,11 +16,10 @@
                     korzystam.</p>
             </div>
 
-            <div
-                class="flex flex-col mx-auto gap-10 md:gap-0 md:flex-wrap md:flex-row w-full items-center md:justify-between">
+            <div class="flex flex-col mx-auto gap-10 md:gap-10 md:flex-wrap md:flex-row w-full items-center">
 
                 <a v-for="(tech, index) in technologies" :key="index" :href="tech.url"
-                    class="group flex flex-col w-60 md:w-40 h-80 md:h-60 rounded-xl shadow-lg text-lg md:font-md font-bold text-center hover:shadow-2xl hover:-translate-y-1 duration-200 cursor-pointer">
+                    class="group flex flex-col w-60 md:w-52 h-80 md:h-64 rounded-xl shadow-lg text-lg md:text-md font-bold text-center hover:shadow-2xl hover:-translate-y-1 duration-200 cursor-pointer">
 
                     <div
                         class="h-3/4 w-full flex items-center justify-center bg-forestGreen/80 rounded-t-xl duration-200">
@@ -35,6 +34,14 @@
 
             </div>
         </div>
+
+        <svg class="absolute -bottom-0.5 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320">
+            <path fill="#FDFDF5" fill-opacity="1"
+                d="M0,128L80,154.7C160,181,320,235,480,234.7C640,235,800,181,960,160C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+
     </section>
 </template>
 

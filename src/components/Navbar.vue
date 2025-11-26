@@ -62,9 +62,9 @@ const toggleMenu = () => {
 
 const menuItems = [
     { name: 'O mnie', path: '#about-me' },
-    { name: 'Projekty', path: '/projekty' },
     { name: 'Tech Stack', path: '#technologies' },
-    { name: 'Edukacja', path: '/edukacja' },
+    { name: 'Projekty', path: '/projekty' },
+    { name: 'Edukacja', path: '#education' },
     { name: 'Kontakt', path: '/kontakt' },
 ];
 </script>
