@@ -65,7 +65,7 @@ const menuItems = [
     { name: 'Tech Stack', path: '#technologies' },
     { name: 'Projekty', path: '/projekty' },
     { name: 'Edukacja', path: '#education' },
-    { name: 'Kontakt', path: '/kontakt' },
+    { name: 'Kontakt', path: '#contact' },
 ];
 </script>
 
