@@ -20,9 +20,9 @@
             <div
                 class="w-full md:w-1/2 items-center justify-center space-y-8 leading-9 text-lg md:text-xl font-semibold text-graphite mt-10 md:mt-0">
                 <div class="flex flex-col space-y-8 text-center md:max-w-xl md:text-left">
-                    <h1 class="text-4xl md:text-5xl font-extrabold text-center md:text-left text-mediumGreen">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-center md:text-left text-mediumGreen">
                         Kod, który robi różnicę
-                    </h1>
+                    </h2>
 
                     <p class="text-mediumGreen text-2xl md:text-3xl font-bold text-center md:text-left my-8">Cześć!</p>
 

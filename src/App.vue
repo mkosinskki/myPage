@@ -4,6 +4,7 @@ import HeroPage from './pages/HeroPage.vue';
 import AboutMe from './pages/AboutMe.vue';
 import Technologies from './pages/Technologies.vue';
 import Education from './pages/Education.vue';
+import Contact from './pages/Contact.vue';
 import { RouterView } from 'vue-router'
 
 </script>
@@ -18,6 +19,8 @@ import { RouterView } from 'vue-router'
   <Technologies />
 
   <Education />
+
+  <Contact />
 
   <RouterView />
 </template>
