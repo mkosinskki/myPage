@@ -8,7 +8,7 @@
                 fill="#FDFDF5" />
         </svg>
 
-        <div class="relative container max-w-6xl mx-auto flex flex-col pt-30 pb-48 space-y-20 md:space-y-20 z-20">
+        <div class="relative container max-w-6xl mx-auto flex flex-col pt-32 pb-64 space-y-20 md:space-y-20 z-20 px-5">
             <div class="flex flex-col space-y-6 text-center md:text-left px-5 md:px-0">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-center md:text-left text-cotton">Tech stack
                 </h2>

@@ -1,6 +1,6 @@
 <template>
-    <section id="education" class="relative pt-8 pb-28 md:pt-0 bg-cotton overflow-hidden text-graphite">
-        <div class="relative container max-w-6xl mx-auto px-4 md:px-0">
+    <section id="education" class="relative pt-10 pb-28 md:pt-8 bg-cotton overflow-hidden text-graphite">
+        <div class="relative container max-w-6xl mx-auto px-5">
 
             <div class="flex flex-col space-y-4 mb-24 text-center md:text-left">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-forestGreen">Edukacja</h2>
