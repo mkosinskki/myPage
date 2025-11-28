@@ -5,6 +5,7 @@ import AboutMe from './pages/AboutMe.vue';
 import Technologies from './pages/Technologies.vue';
 import Education from './pages/Education.vue';
 import Contact from './pages/Contact.vue';
+import Footer from './components/Footer.vue';
 import { RouterView } from 'vue-router'
 
 </script>
@@ -21,6 +22,8 @@ import { RouterView } from 'vue-router'
   <Education />
 
   <Contact />
+
+  <Footer />
 
   <RouterView />
 </template>

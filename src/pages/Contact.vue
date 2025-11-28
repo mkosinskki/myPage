@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="bg-cotton pt-12 pb-20 md:pt-12 md:pb-12 relative">
+    <section id="contact" class="bg-cotton pt-12 pb-20 relative">
         <div class="flex flex-col container mx-auto max-w-6xl items-center space-y-8 px-3 md:px-44">
             <h2 class="text-4xl md:text-5xl font-extrabold text-center text-forestGreen">
                 Skontaktuj się ze mną
@@ -65,7 +65,7 @@
                     </div>
 
                     <button type="submit"
-                        class="w-full bg-lightMint/90 hover:bg-lightMint text-graphite font-bold text-lg py-3 rounded-lg shadow-lg transition transform hover:scale-105 duration-150">
+                        class="w-full bg-lightMint hover:bg-forestGreen text-graphite hover:text-offWhite font-bold text-lg py-3 rounded-lg shadow-lg transition transform hover:scale-105 duration-150 hover:shadow-xl">
                         Wyślij wiadomość
                     </button>
 
