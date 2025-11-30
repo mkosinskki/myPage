@@ -1,14 +1,15 @@
 <template>
     <section id="technologies" class="relative bg-mediumGreen">
 
-        <svg class="absolute top-0 right-0 w-full h-auto" width="1920" height="160" viewBox="0 0 1920 160" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute -top-0.5 w-full h-16 md:h-30" width="1920" height="160" viewBox="0 0 1920 160" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path
                 d="M0 64L80 69.3C160 75 320 85 480 80C640 75 800 53 960 74.7C1120 96 1280 160 1440 160C1600 160 1760 96 1840 64L1920 32V0H1840C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0H0V64Z"
                 fill="#FDFDF5" />
         </svg>
 
-        <div class="relative container max-w-6xl mx-auto flex flex-col pt-32 pb-64 space-y-20 md:space-y-20 z-20 px-5">
+        <div
+            class="relative container max-w-6xl mx-auto flex flex-col space-y-20 pt-30 py-30 md:pt-30 md:pb-60 md:space-y-20 z-20 px-5">
             <div class="flex flex-col space-y-6 text-center md:text-left px-5 md:px-0">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-center md:text-left text-cotton">Tech stack
                 </h2>
@@ -35,8 +36,8 @@
             </div>
         </div>
 
-        <svg class="absolute -bottom-0.5 left-0 w-full h-auto" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320">
+        <svg class="absolute -bottom-0.5 w-full h-16 md:h-54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
             <path fill="#FDFDF5" fill-opacity="1"
                 d="M0,128L80,154.7C160,181,320,235,480,234.7C640,235,800,181,960,160C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
             </path>

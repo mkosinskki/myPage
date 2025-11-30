@@ -19,7 +19,7 @@
                             O mnie
                         </a>
 
-                        <a href="#"
+                        <a href="#projects"
                             class="flex-1 md:flex-none md:w-40 bg-lightMint px-2 py-3 rounded-lg text-center font-medium transition-all duration-150 hover:bg-mediumGreen hover:text-offWhite hover:-translate-y-0.5 hover:shadow-md">
                             Projekty
                         </a>

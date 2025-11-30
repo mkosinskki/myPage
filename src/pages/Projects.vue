@@ -1,6 +1,7 @@
 <template>
-    <section id="projects" class="bg-cotton">
-        <div class="flex flex-col px-5 container mx-auto max-w-6xl items-center justify-center space-y-18 pt-20 pb-52">
+    <section id="projects" class="bg-cotton relative">
+        <div
+            class="flex flex-col px-5 container mx-auto max-w-6xl items-center justify-center space-y-18 pt-10 pb-12 md:pb-50 md:pt-6">
 
             <div class="flex flex-col items-center justify-center md:items-end w-full">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-forestGreen">Moje projekty</h2>
@@ -52,6 +53,13 @@
 
                 </div>
             </div>
+
+            <svg class="absolute -bottom-0.5 left-0 w-full h-20 md:h-80" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#3a7d44" fill-opacity="1"
+                    d="M0,256L48,261.3C96,267,192,277,288,256C384,235,480,181,576,186.7C672,192,768,256,864,288C960,320,1056,320,1152,304C1248,288,1344,256,1392,240L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
         </div>
     </section>
 </template>
