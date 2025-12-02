@@ -1,17 +1,21 @@
 <template>
     <section id="projects" class="bg-cotton relative">
         <div
-            class="flex flex-col px-5 container mx-auto max-w-6xl items-center justify-center space-y-18 pt-10 pb-12 md:pb-50 md:pt-6">
+            class="flex flex-col px-5 container mx-auto max-w-6xl items-center justify-center space-y-18 pt-16 pb-12 md:pb-50 md:pt-6">
 
             <div class="flex flex-col items-center justify-center md:items-end w-full">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-forestGreen">Moje projekty</h2>
-                <p class="text-xl text-forestGreen/80 font-medium mt-2">Wybrane zrealizowane projekty.</p>
+                <p class="text-xl text-forestGreen/80 font-medium mt-2 text-center md:text-left">Wybrane zrealizowane
+                    projekty.</p>
             </div>
 
-            <div class="flex flex-col space-y-24">
+            <div class="flex flex-col space-y-12 md:space-y-30">
                 <div v-for="(project, index) in projects" :key="index"
                     class="flex flex-col items-center justify-center gap-8 md:gap-20 w-full"
                     :class="index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'">
+
+                    <div v-if="index !== 0" class="w-full h-1 bg-graphite/40 rounded-full md:hidden my-6">
+                    </div>
 
                     <div class="flex flex-col justify-center md:w-1/2 space-y-6 text-center"
                         :class="index % 2 === 0 ? 'md:text-right md:items-end' : 'md:text-left md:items-start'">
@@ -20,7 +24,7 @@
                             {{ project.name }}
                         </h3>
 
-                        <p class="text-lg text-graphite font-medium md:max-w-md">
+                        <p class="text-lg text-graphite font-medium">
                             {{ project.description }}
                         </p>
 
@@ -70,11 +74,11 @@ import project1Image from '../components/test.png';
 
 const projects = [
     {
-        name: 'Projekt 1',
+        name: 'Strona portfolio',
         photo: project1Image,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe doloribus distinctio pariatur vel inventore culpa illo, totam nesciunt cum!',
-        technologies: ['Vue 3', 'Tailwind', 'Node.js'],
-        link: '',
+        description: 'Celem stworzenia tej strony było zebranie moich dotychczasowych projektów, umiejętności i przedstawienie ich w formie innej niż PDF z wygenerowanym CV. Stworzona z wykorzystaniem tailwindcss z elementami vue.js. ',
+        technologies: ['Vue 3', 'Tailwind'],
+        link: 'https://marcinkosinski.dev',
     },
     {
         name: 'Projekt 2',

@@ -21,9 +21,12 @@
                                 md:items-start md:text-left md:pl-6
                                 md:group-even:items-end md:group-even:text-right md:group-even:pr-6 md:group-even:pl-0">
                         <div
-                            class="px-4 py-1 z-20 relative inline-flex flex-col gap-1 text-center md:px-0 md:text-inherit">
-                            <span class="text-3xl font-black text-offWhite leading-none">{{ edu.year }}</span>
-                            <span class="text-sm text-lightMint/90 font-bold uppercase tracking-widest">{{ edu.type
+                            class="px-1 md:px-0 w-full md:w-auto py-1 z-20 relative inline-flex flex-row justify-between items-center md:flex-col gap-1 md:text-inherit">
+                            <span class="text-3xl font-black text-offWhite leading-none text-left md:text-center">{{
+                                edu.year }}</span>
+                            <span
+                                class="text-sm text-lightMint/90 font-bold uppercase tracking-widest text-right md:text-center">{{
+                                    edu.type
                                 }}</span>
                         </div>
                     </div>
